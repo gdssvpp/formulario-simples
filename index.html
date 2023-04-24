@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link type="javascript" href="script.js" rel="javascript">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-inputs">
+            <div class="fields">
+                <form name="form" onsubmit="return validateForm()">
+                    <div class="header">
+                        <h1>VALIDATED FORM</h1>
+                    </div>
+                    <div class="name">
+                        <input type="text" id="name" name="name" required placeholder="Your name here.">
+                    </div>
+
+                    <div class="email">
+                        <input type="email" id="email" name="email" required placeholder="Your email here.">
+                    </div>
+
+                    <div class="password">
+                        <input type="password" id="password" name="password" required placeholder="Your password here.">
+                    </div>
+
+                    <div class="birthdate">
+                        <input type="date" id="birthdate" name="birthdate" value="0000-00-00" min="1950-01-01" max="2023-12-31" required>
+                    </div>
+
+                    <div class="cpf">
+                        <input type="text" id="cpf" name="cpf" required placeholder="Your CPF here.">
+                    </div>
+
+                    <div class="phone">
+                        <input type="tel" id="phone" name="phone" required placeholder="Your phone number here.">
+                    </div>
+
+                    <div class="creditcard">
+                        <input type="text" id="card" name="card" placeholder="Your credit-card here.">
+                        <input type="number" id="cvv" name="cvv" placeholder="CVV">
+                    </div>                    
+                    <img src="img/" class="cardflag" alt="Credit-Card Flag"></a>
+                    <div class="submit">
+                    <button type="submit" name="submit" id="submit" value="Send">SEND
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

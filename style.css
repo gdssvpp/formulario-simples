@@ -1,0 +1,110 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(61,12,134);
+    background: linear-gradient(104deg, rgba(87,9,121,1) 12%, rgba(61,12,134,1) 47%);
+}
+
+.container{
+    display: flex;
+}
+
+.header {
+    display: flex;
+    margin-bottom: -30px;
+    color: rgb(221, 214, 230);
+    justify-content: center;
+}
+
+.card-inputs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 2px 45px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 650px;
+    background: rgb(61,12,134);
+    background: linear-gradient(104deg, rgba(61,12,134,1) 12%, rgba(87,9,121,1) 47%);
+    padding: 28px 32px;
+    border-radius: 18px;
+}
+
+.creditcard {
+    display: inline-block;
+}
+
+#cvv{
+    position: absolute;
+    margin-left: 100px;
+    width: 45px !important;
+    -moz-appearance: textfield;
+}
+
+.cardflag {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+#cvv::-webkit-outer-spin-button,
+#cvv::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#card{
+    width: 200px !important;
+}
+
+.fields{
+    display: flex;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid #792ea1;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    margin-top: 50px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: rgb(127, 125, 128);
+    font-family: 'Roboto', sans-serif;
+}
+
+button[type="submit"]{
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: #580a81;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    border: none;
+    font-weight: bold;
+    color: #792ea1;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
